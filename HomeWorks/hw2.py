@@ -10,7 +10,7 @@ class Person:
         print(f"Привет! Меня зовут {self.name}. Я родился {self.birth_date}. "
               f"Моя профессия: {self.occupation}. У меня {education_status}.")
 
-class Classmate:
+class Classmate(Person):
     def __init__(self, name, birth_date, occupation, higher_education, group_name):
         super().__init__(name, birth_date, occupation, higher_education)
         self.group_name = group_name
@@ -23,7 +23,7 @@ classmate1 = Classmate("Скиппер", "2003", "Студентка", False, "1
 classmate2 = Classmate("Тереза", "1998", "Фотограф", True, "11a")
 
 
-class Friend:
+class Friend(Person):
     def __init__(self, name, birth_date, occupation, higher_education, hobby):
         super().__init__(name, birth_date, occupation, higher_education)
         self.hobby = hobby
