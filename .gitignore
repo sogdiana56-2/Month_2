@@ -7,3 +7,6 @@ __pycache__/
 *.pyd
 
 .idea/
+database.db
+database.sqlite
+database.sqlite3
